@@ -13,6 +13,8 @@ set showcmd
 
 
 " 見た目系
+"色
+syntax enable
 " 行番号を表示
 set number
 " 現在の行を強調表示
@@ -61,3 +63,41 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
+
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" ****My Bundles here****:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
+" Rails向けのコマンドを提供する
+NeoBundle 'tpope/vim-rails'
+" Ruby向けにendを自動挿入してくれる
+NeoBundle 'tpope/vim-endwise'
+"タグ補完
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'vim-scripts/twilight'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+colorscheme twilight
