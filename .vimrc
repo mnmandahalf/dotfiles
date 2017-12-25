@@ -36,6 +36,7 @@ set wildmode=list:longest
 " 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 
 " Tab系
@@ -91,6 +92,7 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/twilight'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
