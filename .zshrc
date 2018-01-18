@@ -10,6 +10,8 @@ alias ll='ls -l'
 alias vz='vim ~/.zshrc'
 alias so='source'
 alias history='fc -lt '%F %T' 1'
+alias fgr='find . -type f | xargs grep'
+alias g='git'
 
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
