@@ -12,6 +12,9 @@ set hidden
 set showcmd
 
 
+" 入力系
+noremap <Space><CR> o<ESC>
+
 " 見た目系
 "色
 syntax enable
