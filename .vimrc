@@ -115,6 +115,9 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/twilight'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/neoyank.vim'
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
