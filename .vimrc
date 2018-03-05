@@ -118,6 +118,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/neoyank.vim'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'itchyny/lightline.vim'
 
 call neobundle#end()
 
