@@ -112,7 +112,7 @@ NeoBundle 'tpope/vim-endwise'
 "タグ補完
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'vim-scripts/twilight'
+NeoBundle 'KeitaNakamura/railscasts.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
@@ -127,7 +127,7 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
-colorscheme twilight
+colorscheme railscasts
 
 command! -nargs=? Jq call s:Jq(<f-args>)
 function! s:Jq(...)
