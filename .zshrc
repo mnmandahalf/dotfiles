@@ -12,6 +12,7 @@ alias so='source'
 alias history='fc -lt '%F %T' 1'
 alias fgr='find . -type f | xargs grep'
 alias g='git'
+alias fig='docker-compose'
 
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
