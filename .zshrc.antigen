@@ -1,0 +1,3 @@
+source ~/.zsh/antigen/antigen.zsh
+
+antigen bundle Tarrasch/zsh-bd
