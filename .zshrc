@@ -32,3 +32,4 @@ if [ -f '/Users/200465/google-cloud-sdk/completion.zsh.inc' ]; then source '/Use
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(anyenv init -)"
