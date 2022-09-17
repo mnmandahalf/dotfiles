@@ -24,8 +24,8 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(anyenv init -)"
+if type "pyenv" > /dev/null 2>&1; then eval "$(pyenv init -)"; fi
+if type "anyenv" > /dev/null 2>&1; then eval "$(anyenv init -)"; fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/manami/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/manami/google-cloud-sdk/path.zsh.inc'; fi
@@ -36,4 +36,3 @@ if [ -f '/Users/manami/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ma
 export CLOUDSDK_PYTHON='/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7'
 export PATH="$HOME/.anyenv/envs/nodenv/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
