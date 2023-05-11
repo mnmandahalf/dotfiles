@@ -2,7 +2,7 @@ autoload -U compinit
 compinit
 
 #prompt
-PROMPT='%m:%F{green}%c%f %n$ '
+PROMPT='%D %* %n@%m:%F{green}%c%f$ '
 
 #aliases
 alias la='ls -la'
