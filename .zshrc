@@ -14,8 +14,12 @@ alias fgr='find . -type f | xargs grep'
 alias g='git'
 alias fig='docker-compose'
 alias k='kubectl'
+alias abrew='/opt/homebrew/bin/brew'
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
 
 export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/opt/anyenv/bin"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:/usr/local/git/bin"
 export PATH="$PATH:$HOME/platform-tools/"
@@ -32,7 +36,7 @@ export PATH="$HOME/.anyenv/envs/nodenv/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
