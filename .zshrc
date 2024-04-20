@@ -2,7 +2,7 @@ autoload -U compinit
 compinit
 
 #prompt
-PROMPT='%D %* %n@%m:%F{green}%c%f$ '
+PROMPT='%D %* %n@:%F{green}%c%f$ '
 
 #aliases
 alias la='ls -la'
@@ -40,3 +40,6 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="$PATH:/usr/local/nvim/bin"
+
