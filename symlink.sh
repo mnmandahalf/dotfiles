@@ -1,5 +1,7 @@
 #!/bin/bash
 
+target_init_lua="$HOME/.config/nvim/init.lua"
+source_init_lua="$HOME/repos/mnmandahalf/dotfiles/init.lua"
 target_dir="$HOME/.config/nvim/lua/plugin"
 source_dir="$HOME/repos/mnmandahalf/dotfiles/lua/plugins"
 
@@ -15,4 +17,8 @@ for file in "$source_dir"/*; do
         ln -s "$file" "$link_path"
     fi
 done
+
+if [ ! -e "$target_init_lua" ]; then
+    ln -s "$source_init_lua" "$target_init_lua"
+fi
 
