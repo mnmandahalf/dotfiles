@@ -16,6 +16,7 @@ alias fig='docker-compose'
 alias k='kubectl'
 alias abrew='/opt/homebrew/bin/brew'
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
+alias vi='nvim'
 
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:/opt/homebrew/bin"
