@@ -34,6 +34,7 @@ if type "anyenv" > /dev/null 2>&1; then eval "$(anyenv init -)"; fi
 
 export CLOUDSDK_PYTHON="$PYENV_ROOT/shims/python"
 export PATH="$HOME/.anyenv/envs/nodenv/bin:$PATH"
+export PATH="$HOME/.anyenv/envs/rbenv/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # The next line updates PATH for the Google Cloud SDK.
