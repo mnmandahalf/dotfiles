@@ -1,4 +1,3 @@
-print('init.lua')
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -14,14 +13,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
--- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- optionally enable 24-bit colour
-vim.opt.termguicolors = true
+vim.opt.number = true
 
--- empty setup using defaults
+vim.cmd 'colorscheme material'
+
 require("nvim-tree").setup()
 
 vim.keymap.set("n", "<C-t>", "<Cmd>NvimTreeToggle<CR>")
+
