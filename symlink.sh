@@ -2,7 +2,7 @@
 
 target_init_lua="$HOME/.config/nvim/init.lua"
 source_init_lua="$HOME/repos/mnmandahalf/dotfiles/init.lua"
-target_dir="$HOME/.config/nvim/lua/plugin"
+target_dir="$HOME/.config/nvim/lua/plugins"
 source_dir="$HOME/repos/mnmandahalf/dotfiles/lua/plugins"
 
 if [ ! -d "$target_dir" ]; then
