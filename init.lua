@@ -23,4 +23,5 @@ vim.cmd 'colorscheme material'
 require("nvim-tree").setup()
 
 vim.keymap.set("n", "<C-t>", "<Cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<C-j>", "<Cmd>NvimTreeFindFile<CR>")
 
