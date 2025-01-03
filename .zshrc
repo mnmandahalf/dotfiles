@@ -44,4 +44,5 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export PATH="$PATH:$HOME/nvim-macos-arm64/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
