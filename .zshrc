@@ -14,13 +14,12 @@ alias fgr='find . -type f | xargs grep'
 alias g='git'
 alias fig='docker-compose'
 alias k='kubectl'
-alias abrew='/opt/homebrew/bin/brew'
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
 alias vi='nvim'
+
 
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:/opt/homebrew/bin"
-export PATH="$PATH:/opt/homebrew/opt/anyenv/bin"
+
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:/usr/local/git/bin"
 export PATH="$PATH:$HOME/platform-tools/"
@@ -37,7 +36,10 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 # shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
 export PATH="$PATH:$HOME/nvim-macos-arm64/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
+if [ -d /opt/homebrew/bin ]; then
+  eval $(/opt/homebrew/bin/brew shellenv)
+fi
